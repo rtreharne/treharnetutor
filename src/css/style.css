@@ -18,13 +18,29 @@ a {
 
 header#main-header {
   padding: 1em;
-  background: #008080;
-  color: #fff; }
+  background: #fff;
+  color: #333;
+  min-height: 100%;
+  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh;
+  /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: center; }
   header#main-header h1 {
-    font-size: 40px; }
+    font-size: 40px;
+    font-family: "Computer Modern Concrete", sans-serif; }
+  header#main-header img#header-logo {
+    max-width: 200px;
+    margin-bottom: 5px; }
+  header#main-header .fa {
+    font-size: 5em; }
+  header#main-header a {
+    color: #333; }
+    header#main-header a:hover {
+      color: #ccc; }
 
 nav#main-nav {
-  background: #009a9a;
+  background: #fff;
   height: 40px; }
   nav#main-nav ul {
     list-style: none;
@@ -32,7 +48,7 @@ nav#main-nav {
   nav#main-nav li {
     display: inline; }
   nav#main-nav a {
-    color: #fff;
+    color: #333;
     padding-right: 20px; }
     nav#main-nav a:hover {
       color: #ccc; }
@@ -54,8 +70,8 @@ nav#main-nav {
   padding: 10px 15px; }
 
 .button-a {
-  background: #004d4d;
-  color: #fff; }
+  background: #e6e6e6;
+  color: #000; }
 
 .button-b {
   background: #00cdcd;
