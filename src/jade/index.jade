@@ -1,78 +1,114 @@
 doctype html
-html(lang="en")
+html(lang='en')
   head
-    meta(http-equiv="content-type", content="text/html; charset=UTF-8")
-    meta(charset="utf-8")
-    title Note and Task
-    meta(name="generator", content="Bootply")
-    meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
-    meta(name="description", content="Bootstrap 3 layout scaffolding grid")
-    link(href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", rel="stylesheet")
-    link(href="/css/social-btn.css", rel="stylesheet")
+    meta(http-equiv='content-type', content='text/html; charset=UTF-8')
+    meta(charset='utf-8')
+    title thesisretreat - Write that thesis
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    meta(name='description', content='A basic template for Bootstrap 3.0')
+    link(href='//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css', rel='stylesheet')
+    link(href="/css/basic.css", rel="stylesheet")
     link(href="/css/style.css", rel="stylesheet")
-    link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
-    //if lt IE 9
-      script(src="//html5shim.googlecode.com/svn/trunk/html5.js")
-    link(rel="apple-touch-icon", href="/bootstrap/img/apple-touch-icon.png")
-    link(rel="apple-touch-icon", sizes="72x72", href="/bootstrap/img/apple-touch-icon-72x72.png")
-    link(rel="apple-touch-icon", sizes="114x114", href="/bootstrap/img/apple-touch-icon-114x114.png")
-    // CSS code from Bootply.com editor
-    style(type="text/css").
 
-  // HTML code from Bootply.com editor
+    //if lt IE 9
+      script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
+
   body
     //
-      HEADER
-      =================================
-    .jumbotron.text-center
+    .navbar.navbar-default.navbar-fixed-top
       .container
-        .row
-          .col.col-lg-12.col-sm-12
-            h1 Note and Task
+        .navbar-header
 
-            p Write it down. Get it done.
-    // /header container
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='#main') thesisretreat
+        .collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='#why') why
+            li
+              a(href='#how') how
+            li
+              a(href='#what') what
+            li
+              a(href='#where') where
+            li
+              a(href='#register') register
+            li
+              a(href='#contact') contact
+
+
     //
-      CONTENT
-      =================================
-    .container
 
+    .container#main.full-height.vertical-center
+      .row
+        .col.col-lg-offset-2.col-lg-8
+          .text-left
+            include main.jade
+    hr
 
-        .col-md-offset-4.col-md-4
-          a.btn.btn-block.btn-social.btn-lg.btn-google(href="/today.html")
-            span.fa.fa-google
-            |  Sign in with Google
-          a.btn.btn-block.btn-social.btn-lg.btn-facebook(onclick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-google']);")
-            span.fa.fa-facebook
-            |  Sign in with Facebook
-          a.btn.btn-block.btn-social.btn-lg.btn-twitter(onclick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-google']);")
-            span.fa.fa-twitter
-            |  Sign in with Twitter
-          a.btn.btn-block.btn-social.btn-lg.btn-linkedin(onclick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-google']);")
-            span.fa.fa-linkedin
-            |  Sign in with LinkedIn
-          a.btn.btn-block.btn-social.btn-lg.btn-github(onclick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-google']);")
-            span.fa.fa-github
-            |  Sign in with GitHub
-
-
-
-
+    .container#why.full-height.vertical-center.parallax
+      .row
+        .col.col-lg-offset-1.col-lg-10
+          .text-left
+            include why.jade
 
     hr
-    // /CONTENT ============
-    script(type="text/javascript", src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js")
 
-    script(type="text/javascript", src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
+    .container#how.full-height.vertical-center.parallax
+      .row
+        .col.col-lg-offset-1.col-lg-10
+          .text-left
+            include how.jade
+
+    hr
+
+    .container#what.full-height.vertical-center.parallax
+      .row
+        .col.col-lg-offset-1.col-lg-10
+          .text-left
+            include what.jade
+
+
+    .container#where.full-height.vertical-center.parallax
+      .row
+        .col.col-lg-offset-1.col-lg-10
+          .text-left
+            include where.jade
+
+    .container#register.full-height.vertical-center
+      .row
+        .col.col-lg-offset-2.col-lg-8
+          .text-left
+            include register.jade
+
+    .container#contact.full-height.vertical-center
+      .row
+        .col.col-lg-offset-2.col-lg-8
+          .text-left
+            include contact.jade
+
+
+
+
+
+
+    script(type='text/javascript', src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+    script(type='text/javascript', src='//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js')
+    script(defer='', src='https://use.fontawesome.com/releases/v5.0.8/js/all.js')
     // JavaScript jQuery code from Bootply.com editor
-    script(type="text/javascript").
+    script(type='text/javascript').
       $(document).ready(function() {
       });
-
     script.
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-40413119-1', 'bootply.com');
-      ga('send', 'pageview');
+      var why = $("#why");
+      var where = $("#where");
+      why.css({
+        "background-position": (why.width()*.66) + "px " + "0px"
+      });
+      where.css({
+        "background-position": (-where.width()*.66) + "px " + "0px"
+      });

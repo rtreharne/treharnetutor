@@ -1,0 +1,90 @@
+doctype html
+html(lang='en')
+  head
+    meta(http-equiv='content-type', content='text/html; charset=UTF-8')
+    meta(charset='utf-8')
+    title thesisretreat - Write that thesis
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    meta(name='description', content='A basic template for Bootstrap 3.0')
+    link(href='//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css', rel='stylesheet')
+    link(href="/css/basic.css", rel="stylesheet")
+    //if lt IE 9
+      script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
+
+  body
+    //
+    .navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='#main') thesisretreat
+        .collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='#why') why
+            li
+              a(href='#where') where
+            li
+              a(href='#where') what
+            li
+              a(href='#register') register
+            li
+              a(href='#contact') contact
+
+    //
+    .container#main.full-height.vertical-center
+      .row
+        .col.col-lg-offset-1.col-lg-10
+          .text-left
+            include main.jade
+
+    .container#why.full-height.vertical-center.parallax
+      .row
+        .col.col-lg-offset-1.col-lg-10
+          .text-left
+            include why.jade
+
+    .container#where.full-height.vertical-center.parallax
+      .row
+        .col.col-lg-offset-1.col-lg-10
+          .text-left
+            include where.jade
+
+    .container#register.full-height.vertical-center
+      .row
+        .col.col-lg-offset-2.col-lg-8
+          .text-left
+            include register.jade
+
+    .container#contact.full-height.vertical-center
+      .row
+        .col.col-lg-offset-2.col-lg-8
+          .text-left
+            include contact.jade
+
+
+
+
+
+
+    script(type='text/javascript', src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+    script(type='text/javascript', src='//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js')
+    script(defer='', src='https://use.fontawesome.com/releases/v5.0.8/js/all.js')
+    // JavaScript jQuery code from Bootply.com editor
+    script(type='text/javascript').
+      $(document).ready(function() {
+      });
+    script.
+      var why = $("#why");
+      var where = $("#where");
+      why.css({
+        "background-position": (why.width()*.66) + "px " + "0px"
+      });
+      where.css({
+        "background-position": (-where.width()*.66) + "px " + "0px"
+      });

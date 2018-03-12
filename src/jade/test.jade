@@ -1,0 +1,52 @@
+doctype html
+html(lang='en')
+  head
+    meta(http-equiv='content-type', content='text/html; charset=UTF-8')
+    meta(charset='utf-8')
+    title Bootply snippet - Bootstrap Navbar Static top Template
+    meta(name='generator', content='Bootply')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    meta(name='description', content='A basic template for Bootstrap 3.0')
+    link(href='//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css', rel='stylesheet')
+    //if lt IE 9
+      script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
+    link(rel='apple-touch-icon', href='/bootstrap/img/apple-touch-icon.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='/bootstrap/img/apple-touch-icon-72x72.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='/bootstrap/img/apple-touch-icon-114x114.png')
+    // CSS code from Bootply.com editor
+    style(type='text/css').
+  // HTML code from Bootply.com editor
+  body
+    .navbar.navbar-default.navbar-static-top
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='#') Brand
+        .collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li.active
+              a(href='#') Home
+            li
+              a(href='#contact') Contact
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='#about') About
+        // /.nav-collapse
+    .container
+      .text-center
+        h1 Bootstrap starter template
+        p.lead
+          | Use this document as a way to quickly start any new project.
+          br
+          |  All you get is this text and a mostly barebones HTML document.
+    // /.container
+    script(type='text/javascript', src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+    script(type='text/javascript', src='//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js')
+    // JavaScript jQuery code from Bootply.com editor
+    script(type='text/javascript').
+      $(document).ready(function() {
+      });
+  

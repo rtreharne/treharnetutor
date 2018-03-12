@@ -1,0 +1,35 @@
+.row
+  .col.col-lg-offset-6.col-lg-6.headline
+    p -- Where?
+    h1.big-title Lane End Conference Centre
+    p
+      a
+        i.fas.fa-map-marker
+        |  See it on the map.
+    p
+     b
+       | A beautiful, accessible, quiet retreat. The perfect spot for you and
+       font.pink  your thesis.
+
+    .slider
+      #myCarousel.carousel.slide(data-ride='carousel')
+        // Indicators
+        ol.carousel-indicators
+          li.active(data-target='#myCarousel', data-slide-to='0')
+          li(data-target='#myCarousel', data-slide-to='1')
+          li(data-target='#myCarousel', data-slide-to='2')
+        // Wrapper for slides
+        .carousel-inner
+          .item.active
+            img(src='img/clouds.jpg', alt='Los Angeles', style='width:100%;')
+          .item
+            img(src='img/clouds.jpg', alt='Chicago', style='width:100%;')
+          .item
+            img(src='img/clouds.jpg', alt='New york', style='width:100%;')
+        // Left and right controls
+        a.left.carousel-control(href='#myCarousel', data-slide='prev')
+          span.glyphicon.glyphicon-chevron-left
+          span.sr-only Previous
+        a.right.carousel-control(href='#myCarousel', data-slide='next')
+          span.glyphicon.glyphicon-chevron-right
+          span.sr-only Next
