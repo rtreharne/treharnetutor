@@ -3,7 +3,7 @@
     p -- Where?
     h1.big-title Lane End Conference Centre
     p
-      a
+      a(target="_blank" href="https://www.google.co.uk/maps/place/Lane+End+Conference+Centre/@51.6161482,-0.8357302,15z/data=!4m5!3m4!1s0x0:0xb34d6ee3fe5a6751!8m2!3d51.6161482!4d-0.8357302?hl=en")
         i.fas.fa-map-marker
         |  See it on the map.
     p
@@ -18,14 +18,27 @@
           li.active(data-target='#myCarousel', data-slide-to='0')
           li(data-target='#myCarousel', data-slide-to='1')
           li(data-target='#myCarousel', data-slide-to='2')
+          li(data-target='#myCarousel', data-slide-to='3')
+          li(data-target='#myCarousel', data-slide-to='4')
+          li(data-target='#myCarousel', data-slide-to='5')
+          li(data-target='#myCarousel', data-slide-to='6')
+
         // Wrapper for slides
         .carousel-inner
           .item.active
-            img(src='img/clouds.jpg', alt='Los Angeles', style='width:100%;')
+            img(src='img/1.jpg', alt='Los Angeles', style='width:100%;')
           .item
-            img(src='img/clouds.jpg', alt='Chicago', style='width:100%;')
+            img(src='img/2.jpg', alt='Chicago', style='width:100%;')
           .item
-            img(src='img/clouds.jpg', alt='New york', style='width:100%;')
+            img(src='img/3.jpg', alt='New york', style='width:100%;')
+          .item
+            img(src='img/5.jpg', alt='Chicago', style='width:100%;')
+          .item
+            img(src='img/6.jpg', alt='New york', style='width:100%;')
+          .item
+            img(src='img/7.jpg', alt='Chicago', style='width:100%;')
+          .item
+            img(src='img/8.jpg', alt='New york', style='width:100%;')
         // Left and right controls
         a.left.carousel-control(href='#myCarousel', data-slide='prev')
           span.glyphicon.glyphicon-chevron-left

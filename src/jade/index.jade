@@ -24,7 +24,9 @@ html(lang='en')
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand(href='#main') thesisretreat
+          a.navbar-brand(href='#main')
+            font.pink thesis
+            b retreat
         .collapse.navbar-collapse
           ul.nav.navbar-nav.navbar-right
             li
@@ -36,7 +38,8 @@ html(lang='en')
             li
               a(href='#where') where
             li
-              a(href='#register') register
+              a(href='#register')
+                font.pink register
             li
               a(href='#contact') contact
 
@@ -48,36 +51,39 @@ html(lang='en')
         .col.col-lg-offset-2.col-lg-8
           .text-left
             include main.jade
-    hr
+    hr.style-two
 
-    .container#why.full-height.vertical-center.parallax
+    .container#why.full-height.vertical-center.parallax.right-bg
       .row
         .col.col-lg-offset-1.col-lg-10
           .text-left
             include why.jade
 
-    hr
+    hr.style-two
 
-    .container#how.full-height.vertical-center.parallax
+    .container#how.full-height.vertical-center.parallax.left-bg
       .row
         .col.col-lg-offset-1.col-lg-10
           .text-left
             include how.jade
 
-    hr
+    hr.style-two
 
-    .container#what.full-height.vertical-center.parallax
+    .container#what.full-height.vertical-center.parallax.right-bg
       .row
         .col.col-lg-offset-1.col-lg-10
           .text-left
             include what.jade
 
+    hr.style-two
 
-    .container#where.full-height.vertical-center.parallax
+    .container#where.full-height.vertical-center.parallax.left-bg
       .row
         .col.col-lg-offset-1.col-lg-10
           .text-left
             include where.jade
+
+    .hr.style-two
 
     .container#register.full-height.vertical-center
       .row
@@ -85,11 +91,32 @@ html(lang='en')
           .text-left
             include register.jade
 
+    .hr.style-twos
+
     .container#contact.full-height.vertical-center
       .row
         .col.col-lg-offset-2.col-lg-8
           .text-left
             include contact.jade
+
+    a(href='#main')
+      #fixedbtn-up
+        .inner-fixedbtn-up
+          i.fas.fa-arrow-up.fa-2x
+
+    a(href='#register')
+      #fixedbtn-reg
+        .inner-fixedbtn-reg Register
+
+      #fixedbtn-offer
+        .inner-fixedbtn-offer
+          b Register your
+          br
+          b CDT cohort.
+          br
+          | Get the
+          br
+          u group discount!
 
 
 
@@ -98,17 +125,34 @@ html(lang='en')
 
     script(type='text/javascript', src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
     script(type='text/javascript', src='//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js')
+    script(type='text/javascript', src='../js/scrolling.js')
     script(defer='', src='https://use.fontawesome.com/releases/v5.0.8/js/all.js')
     // JavaScript jQuery code from Bootply.com editor
     script(type='text/javascript').
       $(document).ready(function() {
       });
     script.
-      var why = $("#why");
-      var where = $("#where");
-      why.css({
-        "background-position": (why.width()*.66) + "px " + "0px"
+      var right = $(".right-bg");
+      var left = $(".left-bg");
+      right.css({
+        "background-position": (right.width()*.66) + "px " + "0px"
       });
-      where.css({
-        "background-position": (-where.width()*.66) + "px " + "0px"
+      left.css({
+        "background-position": (-left.width()*.66) + "px " + "0px"
+      });
+    script.
+      $("#sat-btn").click(function(){
+      $("#saturday").show();
+      $("#friday").hide();
+      $("#sunday").hide();
+      });
+      $("#fri-btn").click(function(){
+      $("#friday").show();
+      $("#saturday").hide();
+      $("#sunday").hide();
+      });
+      $("#sun-btn").click(function(){
+      $("#saturday").hide();
+      $("#friday").hide();
+      $("#sunday").show();
       });
