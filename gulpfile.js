@@ -5,28 +5,28 @@ const jade        = require('gulp-jade');
 
 // Compile Sass & Inject Into Browser
 gulp.task('sass', function() {
-    return gulp.src(['src/scss/*.scss'])
+    return gulp.src(['docs/scss/*.scss'])
         .pipe(sass())
-        .pipe(gulp.dest("src/css"))
+        .pipe(gulp.dest("docs/css"))
         .pipe(browserSync.stream());
 });
 
 gulp.task('jade', function() {
-    return gulp.src(["src/jade/*.jade"])
+    return gulp.src(["docs/jade/*.jade"])
         .pipe(jade({pretty: true}))
-        .pipe(gulp.dest("src"))
+        .pipe(gulp.dest("docs"))
 })
 
 
 // Watch Sass & Serve
 gulp.task('serve', ['sass', 'jade'], function() {
     browserSync.init({
-        server: "./src"
+        server: "./docs"
     });
 
-    gulp.watch(['src/scss/*.scss'], ['sass']);
-    gulp.watch(['src/jade/*.jade'], ['jade']);
-    gulp.watch("src/*.html").on('change', browserSync.reload);
+    gulp.watch(['docs/scss/*.scss'], ['sass']);
+    gulp.watch(['docs/jade/*.jade'], ['jade']);
+    gulp.watch("docs/*.html").on('change', browserSync.reload);
 });
 
 // Default Task

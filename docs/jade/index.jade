@@ -7,8 +7,8 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
     meta(name='description', content='A basic template for Bootstrap 3.0')
     link(href='//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css', rel='stylesheet')
-    link(href="/css/basic.css", rel="stylesheet")
-    link(href="/css/style.css", rel="stylesheet")
+    link(href="css/basic.css", rel="stylesheet")
+    link(href="css/style.css", rel="stylesheet")
 
     //if lt IE 9
       script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
@@ -46,7 +46,7 @@ html(lang='en')
 
     //
 
-    .container#main.full-height.vertical-center
+    .container#main.full-height.vertical-center.headline
       .row
         .col.col-lg-offset-2.col-lg-8
           .text-left
@@ -83,7 +83,7 @@ html(lang='en')
           .text-left
             include where.jade
 
-    .hr.style-two
+    hr.style-two
 
     .container#register.full-height.vertical-center
       .row
@@ -91,13 +91,19 @@ html(lang='en')
           .text-left
             include register.jade
 
-    .hr.style-twos
+    hr.style-two
 
     .container#contact.full-height.vertical-center
       .row
         .col.col-lg-offset-2.col-lg-8
           .text-left
             include contact.jade
+
+    .container#footer.vertical-center
+      .row
+        .col.col-lg-12
+          .text-center
+            include footer.jade
 
     a(href='#main')
       #fixedbtn-up
@@ -108,15 +114,28 @@ html(lang='en')
       #fixedbtn-reg
         .inner-fixedbtn-reg Register
 
-      #fixedbtn-offer
-        .inner-fixedbtn-offer
-          b Register your
-          br
-          b CDT cohort.
-          br
-          | Get the
-          br
-          u group discount!
+    a(href="")
+      #fixedbtn-twitter
+        .i.fab.fa-twitter.fa-2x
+    a(href="")
+      #fixedbtn-facebook
+        .i.fab.fa-facebook.fa-2x
+    a(href="")
+      #fixedbtn-instagram
+        .i.fab.fa-instagram.fa-2x
+
+    .nav-bottom
+        .nav-box
+          .i.fab.fa-twitter
+        .nav-box
+          .i.fab.fa-facebook
+        .nav-box
+          .i.fab.fa-instagram
+        a(href="#register")
+          .nav-box.register  Register
+        a(href="#main")
+          .nav-box
+            .i.fas.fa-arrow-up
 
 
 
@@ -125,7 +144,7 @@ html(lang='en')
 
     script(type='text/javascript', src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
     script(type='text/javascript', src='//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js')
-    script(type='text/javascript', src='../js/scrolling.js')
+    script(type='text/javascript', src='js/scrolling.js')
     script(defer='', src='https://use.fontawesome.com/releases/v5.0.8/js/all.js')
     // JavaScript jQuery code from Bootply.com editor
     script(type='text/javascript').

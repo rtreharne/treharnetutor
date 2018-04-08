@@ -3,10 +3,31 @@
 *:focus {
   outline: none;
 }
+.navbar {
+  font-size: 1.2em;
+}
 
+.navbar-brand{
+  font-size: 1.2em;
+
+}
 .title {
   white-space: normal;
 }
+
+.sponsors img, .support img {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.sponsors img {
+  max-width: 250px;
+}
+
+.support img {
+  max-width: 150px;
+}
+
 
 hr.style-two {
     border: 0;
@@ -133,6 +154,11 @@ span.page-info {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+#support h1.big-title {
+  font-size: 2em;
+}
+
 #why {
   background-image: url('../img/why.jpg');
   width: auto;
@@ -141,7 +167,7 @@ span.page-info {
 }
 
 #how {
-  background-image: url('../img/coffee.jpg');
+  background-image: url('../img/how.jpg');
   width: auto;
   background-repeat: no-repeat;
 }
@@ -150,6 +176,23 @@ span.page-info {
   background-image: url('../img/where.jpg');
   width: auto;
   background-repeat: no-repeat;
+}
+
+#footer {
+  background-image: url('../img/footer-bg.jpg');
+  width: auto;
+  background-repeat: no-repeat;
+  color: $primary-color;
+  padding: 100px;
+}
+
+#footer img{
+  max-width: 200px;
+}
+
+#footer.vertical-center {
+  min-height: 0;
+  height: auto;
 }
 
 .parallax {
@@ -232,17 +275,17 @@ tr.write {
   color: $highlight;
 }
 
-table#saturday, table#sunday {
+table#sunday, table#saturday {
   display: none;
 }
 
-#fixedbtn-up, #fixedbtn-reg, #fixedbtn-offer {
+#fixedbtn-up, #fixedbtn-reg, #fixedbtn-twitter, #fixedbtn-facebook, #fixedbtn-instagram, .nav-bottom {
     position: fixed;
     bottom: 20px;
     right: 20px;
     background-color: $highlight;
     color: $primary-color;
-    font-size: 1.0em;
+    font-size: 0.9em;
     padding: 10px 10px;
     width: 50px;
     height: 50px;
@@ -251,10 +294,36 @@ table#saturday, table#sunday {
     padding: 5px;
     margin: 0px;
     display: none;
-
 }
-.inner-fixedbtn-up, .inner-fixedbtn-reg {
+
+
+
+#fixedbtn-twitter {
+  right: 20px;
+  top: 220px;
+  display: block;
+}
+
+#fixedbtn-facebook {
+  right: 20px;
+  top: 285px;
+  display: block;
+}
+
+#fixedbtn-instagram {
+  right: 20px;
+  top: 350px;
+  display: block;
+}
+
+#fixedbtn-twitter svg, #fixedbtn-facebook svg, #fixedbtn-instagram svg {
+  padding-top: 5px;
+  margin-top: 2px;
+}
+
+.inner-fixedbtn-up, .inner-fixedbtn-reg, .inner-fixedbtn-twitter, .inner-fixedbtn-facebook, .inner-fixedbtn-instagram {
   line-height: 50px;
+
 }
 
 #fixedbtn-reg {
@@ -269,20 +338,96 @@ table#saturday, table#sunday {
 }
 
 #fixedbtn-offer {
-  position: absolute;
-  bottom: 50px;
-  right: 200px;
-  width: 200px;
-  height: 200px;
-  border-radius: 200px;
+  width: 250px;
+  height: 250px;
+  border-radius: 250px;
   display: table;
-  transform: rotate(20deg)
+  transform: rotate(20deg);
+  background-color: $highlight;
+  color: $primary-color;
+  font-size: 1.0em;
+  padding: 10px 10px;
+  text-align: center;
+  padding: 5px;
+  margin: 0px;
+  margin-top: 2px;
+  line-height: 1.2em;
+}
+
+#fixedbtn-offer font.small {
+  font-size: 0.6em;
+}
+#fixedbtn-offer font.large {
+  font-size: 3em;
+  line-height:1.0em;
 }
 
 .inner-fixedbtn-offer {
   display: table-cell;
   vertical-align: middle;
 }
+
+.nav-bottom {
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  height: 55px;
+  width: 100%;
+  border-radius: 0px;
+  padding: 0px;
+  margin: 0px;
+  display: none;
+
+}
+
+.nav-bottom a {
+  text-decoration: none;
+  color: $primary-color
+}
+
+.nav-box {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+.nav-box.register {
+  border: 1px solid $primary-color;
+  padding: 0 5px;
+  border-radius: 5px;
+
+}
+
+.team-box {
+  float: left;
+  margin: 5px;
+}
+
+.team-box img {
+  border-radius: 150px;
+}
+
+//CONTACT FORM
+
+form#contact input, textarea, select {
+  width: 100%;
+  max-width: 500px;
+  margin: 10px 0;
+  border-radius: 5px;
+  height: 50px;
+  padding: 5px;
+}
+
+form#contact textarea {
+  height: 150px;
+}
+form#contact input.btn.btn-primary {
+  max-width: 150px;
+}
+
 
 @media (max-width: 1200px) {
   body {
@@ -315,6 +460,12 @@ table#saturday, table#sunday {
 }
 
 @media (max-width: 992px) {
+  body {
+    font-size: 15px;
+  }
+  p {
+    margin-bottom: 10px;
+  }
   h1.main-title {
     font-size: 3em !important;
   }
@@ -324,13 +475,37 @@ table#saturday, table#sunday {
   #main {
     margin-top: 30px;
   }
-  .event-info h3, p {
+  .event-info h3 {
     margin-bottom: 0px;
+    font-size: 1.3em;
   }
   .event-info {
     margin-left: 0;
   }
   .event-box {
     padding-top: 0px;
+    margin-top: 20px;
+  }
+  .btn-primary {
+    font-size: 1.0em;
+  }
+  #fixedbtn-up, #fixedbtn-reg, #fixedbtn-twitter, #fixedbtn-facebook, #fixedbtn-instagram {
+    display: none;
+  }
+  .nav-bottom {
+    display: none;
+    font-size: 1.5em;
+  }
+  .sponsors img {
+    max-width: 200px;
+  }
+  .support img {
+    max-width: 120px;
+  }
+  .support {
+    text-align: cen center;
+  }
+  .sponsors {
+    text-align: center;
   }
 }
