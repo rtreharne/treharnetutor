@@ -3,10 +3,44 @@ body, .event-box {
   font-family: 'Heebo', sans-serif; }
 
 .navbar {
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Gothic A1', sans-serif;
   font-weight: 400; }
 
 h1.big-title {
-  font-family: 'Heebo', sans-serif;
-  font-weight: 700;
-  font-size: 6em; }
+  font-family: 'Didact Gothic', sans-serif;
+  font-weight: 900;
+  font-size: 4em;
+  color: #003380;
+  text-shadow: 0px 2px #aa0000;
+  margin-top: 10px; }
+
+.headline h3 {
+  font-family: 'Gothic A1', sans-serif;
+  font-weight: 200;
+  font-size: 1.5em;
+  color: #003380; }
+
+.headline h2 {
+  font-family: 'Gothic A1', sans-serif;
+  font-weight: 70000;
+  font-size: 2em;
+  color: #003380; }
+
+#SplashLogo {
+  max-height: 300px; }
+
+.s1 {
+  font-weight: 600;
+  font-size: 1.3em; }
+
+.s2 {
+  font-weight: 600;
+  font-size: 1em; }
+
+.s3 {
+  font-weight: 600;
+  font-size: 1.2em; }
+
+.s4 {
+  font-weight: 600;
+  font-size: 1.5em; }

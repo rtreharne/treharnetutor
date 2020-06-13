@@ -67,11 +67,7 @@ body {
 
 .headline {
   padding-top: 50px;
-}
-
-h1.big-title {
-  font-size: 4em;
-  margin-top: 10px;
+  text-align: center;
 }
 
 font.pink {
@@ -187,7 +183,8 @@ span.page-info {
   -ms-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   background-color: $primary-color;
-  border-color: $highlight;
+  border-bottom: 4px solid $secondary-color;
+
 }
 
 
@@ -198,15 +195,17 @@ span.page-info {
   -o-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+  display: none;
 }
 
 .navbar-default.scrolled #Logo {
-  max-height: 60px;
+  max-height: 80px;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+  display: block;
 }
 
 .navbar-default .navbar-nav li a {
@@ -216,22 +215,27 @@ span.page-info {
   -o-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+  color: $primary-color;
+  font-size: 1.2em;
 }
 
 .navbar-default.scrolled .navbar-nav li a {
-  line-height: 60px;
+  line-height: 80px;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+  color: #fff;
+  font-size: 1em;
 }
 
 #main {
-  background-image: url('../img/main-bg-2.jpg');
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: $light-color;
+  background-image: url('../img/main-bg-2.jpg');
 }
 
 #support h1.big-title {
@@ -415,6 +419,11 @@ table#sunday, table#saturday {
 
 }
 
+#fixedbtn {
+  text-align: center;
+  display: inline-block;
+  margin: 25px;
+}
 #fixedbtn-reg {
   right: 80px;
   width: 200px;
@@ -427,13 +436,13 @@ table#sunday, table#saturday {
 }
 
 #fixedbtn-offer {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   border-radius: 250px;
   display: table;
-  transform: rotate(20deg);
-  background-color: $highlight;
-  color: $primary-color;
+  transform: rotate(345deg);
+  background-color: $primary-color;
+  color: $light-color;
   font-size: 1.0em;
   padding: 10px 10px;
   text-align: center;
@@ -441,6 +450,10 @@ table#sunday, table#saturday {
   margin: 0px;
   margin-top: 2px;
   line-height: 1.2em;
+  box-shadow:  -4px -4px 0px  $secondary-color;
+  -moz-box-shadow: -4px -4px 0px  $secondary-color;
+  -webkit-box-shadow: -4px -4px 0px  $secondary-color;
+  -o-box-shadow: -4px -4px 0px  $secondary-color;
 }
 
 #fixedbtn-offer font.small {
@@ -536,9 +549,7 @@ form#contact input.btn.btn-primary {
   #where {
     background-image: none;
   }
-  #fixedbtn-offer {
-    display: none;
-  }
+
   .event-box {
     margin-left: 0;
     margin-top: 40px;

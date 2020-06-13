@@ -51,11 +51,8 @@ body {
   min-height: 100vh; }
 
 .headline {
-  padding-top: 50px; }
-
-h1.big-title {
-  font-size: 4em;
-  margin-top: 10px; }
+  padding-top: 50px;
+  text-align: center; }
 
 font.pink {
   color: #085837; }
@@ -150,8 +147,8 @@ span.page-info {
   -o-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  background-color: #f9fbfe;
-  border-color: #085837; }
+  background-color: #003380;
+  border-bottom: 4px solid #aa0000; }
 
 .navbar-default #Logo {
   max-height: 100px;
@@ -159,15 +156,17 @@ span.page-info {
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out; }
+  transition: all 0.3s ease-out;
+  display: none; }
 
 .navbar-default.scrolled #Logo {
-  max-height: 60px;
+  max-height: 80px;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out; }
+  transition: all 0.3s ease-out;
+  display: block; }
 
 .navbar-default .navbar-nav li a {
   line-height: 100px;
@@ -175,21 +174,26 @@ span.page-info {
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out; }
+  transition: all 0.3s ease-out;
+  color: #003380;
+  font-size: 1.2em; }
 
 .navbar-default.scrolled .navbar-nav li a {
-  line-height: 60px;
+  line-height: 80px;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out; }
+  transition: all 0.3s ease-out;
+  color: #fff;
+  font-size: 1em; }
 
 #main {
-  background-image: url("../img/main-bg-2.jpg");
   width: 100%;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  background-color: #fbfbfb;
+  background-image: url("../img/main-bg-2.jpg"); }
 
 #support h1.big-title {
   font-size: 2em; }
@@ -214,7 +218,7 @@ span.page-info {
   background-image: url("../img/footer-bg.jpg");
   width: auto;
   background-repeat: no-repeat;
-  color: #f9fbfe;
+  color: #003380;
   padding: 100px; }
 
 #footer img {
@@ -289,7 +293,7 @@ span.page-info {
 
 tr.head {
   background-color: #002b1f;
-  color: #f9fbfe; }
+  color: #003380; }
 
 tr.write {
   color: #085837; }
@@ -302,7 +306,7 @@ table#sunday, table#saturday {
   bottom: 20px;
   right: 20px;
   background-color: #085837;
-  color: #f9fbfe;
+  color: #003380;
   font-size: 0.9em;
   padding: 10px 10px;
   width: 50px;
@@ -341,6 +345,11 @@ table#sunday, table#saturday {
 .inner-fixedbtn-up, .inner-fixedbtn-reg, .inner-fixedbtn-twitter, .inner-fixedbtn-facebook, .inner-fixedbtn-instagram {
   line-height: 50px; }
 
+#fixedbtn {
+  text-align: center;
+  display: inline-block;
+  margin: 25px; }
+
 #fixedbtn-reg {
   right: 80px;
   width: 200px;
@@ -352,20 +361,24 @@ table#sunday, table#saturday {
   display: none; }
 
 #fixedbtn-offer {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   border-radius: 250px;
   display: table;
-  transform: rotate(20deg);
-  background-color: #085837;
-  color: #f9fbfe;
+  transform: rotate(345deg);
+  background-color: #003380;
+  color: #fbfbfb;
   font-size: 1.0em;
   padding: 10px 10px;
   text-align: center;
   padding: 5px;
   margin: 0px;
   margin-top: 2px;
-  line-height: 1.2em; }
+  line-height: 1.2em;
+  box-shadow: -4px -4px 0px #aa0000;
+  -moz-box-shadow: -4px -4px 0px #aa0000;
+  -webkit-box-shadow: -4px -4px 0px #aa0000;
+  -o-box-shadow: -4px -4px 0px #aa0000; }
 
 #fixedbtn-offer font.small {
   font-size: 0.6em; }
@@ -391,7 +404,7 @@ table#sunday, table#saturday {
 
 .nav-bottom a {
   text-decoration: none;
-  color: #f9fbfe; }
+  color: #003380; }
 
 .nav-box {
   display: inline-block;
@@ -402,7 +415,7 @@ table#sunday, table#saturday {
   font-size: 1.2em; }
 
 .nav-box.register {
-  border: 1px solid #f9fbfe;
+  border: 1px solid #003380;
   padding: 0 5px;
   border-radius: 5px; }
 
@@ -438,8 +451,6 @@ form#contact input.btn.btn-primary {
     background-image: none; }
   #where {
     background-image: none; }
-  #fixedbtn-offer {
-    display: none; }
   .event-box {
     margin-left: 0;
     margin-top: 40px; }

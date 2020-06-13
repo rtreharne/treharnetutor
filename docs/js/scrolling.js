@@ -37,7 +37,7 @@ $('a[href*="#"]')
 
 var headerTransparent = true;
 $(window).scroll(function(){
-  var headerShouldBeOpaque = $(window).scrollTop()>150;
+  var headerShouldBeOpaque = $(window).scrollTop()>10;
   if (headerShouldBeOpaque && headerTransparent) {
     headerTransparent = false;
     $('.navbar').addClass("scrolled");
