@@ -3,7 +3,7 @@ html(lang='en')
   head
     meta(http-equiv='content-type', content='text/html; charset=UTF-8')
     meta(charset='utf-8')
-    title thesisretreat - Write that thesis
+    title CageCapture Ltd
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
     meta(name='description', content='A basic template for Bootstrap 3.0')
     link(href='//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css', rel='stylesheet')
@@ -25,23 +25,16 @@ html(lang='en')
             span.icon-bar
             span.icon-bar
           a.navbar-brand(href='#main')
-            font.pink thesis
-            b retreat
+            img#Logo(src="/img/logo.png")
         .collapse.navbar-collapse
           ul.nav.navbar-nav.navbar-right
             li
-              a(href='#why') why
+              a(href='#') Home
             li
-              a(href='#how') how
-            li
-              a(href='#what') what
-            li
-              a(href='#where') where
-            li
-              a(href='#register')
-                font.pink register
+              a(href='#why') Our Technology
             li
               a(href='#contact') contact
+
 
 
     //
@@ -51,7 +44,7 @@ html(lang='en')
         .col.col-lg-offset-2.col-lg-8
           .text-left
             include main.jade
-    hr.style-two
+    hr.style-one
 
     .container#why.full-height.vertical-center.parallax.right-bg
       .row
@@ -59,7 +52,7 @@ html(lang='en')
           .text-left
             include why.jade
 
-    hr.style-two
+    hr.style-one
 
     .container#how.full-height.vertical-center.parallax.left-bg
       .row
@@ -67,7 +60,7 @@ html(lang='en')
           .text-left
             include how.jade
 
-    hr.style-two
+    hr.style-one
 
     .container#what.full-height.vertical-center.parallax.right-bg
       .row
@@ -75,7 +68,7 @@ html(lang='en')
           .text-left
             include what.jade
 
-    hr.style-two
+    hr.style-one
 
     .container#where.full-height.vertical-center.parallax.left-bg
       .row
@@ -113,30 +106,6 @@ html(lang='en')
     a(href='#register')
       #fixedbtn-reg
         .inner-fixedbtn-reg Register
-
-    a(href="")
-      #fixedbtn-twitter
-        .i.fab.fa-twitter.fa-2x
-    a(href="")
-      #fixedbtn-facebook
-        .i.fab.fa-facebook.fa-2x
-    a(href="")
-      #fixedbtn-instagram
-        .i.fab.fa-instagram.fa-2x
-
-    .nav-bottom
-        .nav-box
-          .i.fab.fa-twitter
-        .nav-box
-          .i.fab.fa-facebook
-        .nav-box
-          .i.fab.fa-instagram
-        a(href="#register")
-          .nav-box.register  Register
-        a(href="#main")
-          .nav-box
-            .i.fas.fa-arrow-up
-
 
 
 

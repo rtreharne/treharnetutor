@@ -28,6 +28,17 @@
   max-width: 150px;
 }
 
+h1.main-title {
+  font-size: 20em;
+  color: $dark-color;
+}
+.title p {
+  font-size: 1.2em;
+  color: $dark-color;
+  line-height: 1.75em;
+}
+
+
 
 hr.style-two {
     border: 0;
@@ -41,6 +52,13 @@ hr.style-two {
 
 body {
   font-size: 18px;
+}
+.wrapper {
+  margin-bottom: 30px;
+}
+
+.navbar .container {
+  width: 85%;
 }
 
 .full-height {
@@ -148,6 +166,67 @@ span.page-info {
   max-width: 50%;
 }
 
+.navbar-brand {
+  padding: 10px 10px;
+}
+
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.navbar-default.scrolled {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background-color: $primary-color;
+  border-color: $highlight;
+}
+
+
+.navbar-default #Logo {
+  max-height: 100px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.navbar-default.scrolled #Logo {
+  max-height: 60px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.navbar-default .navbar-nav li a {
+  line-height: 100px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.navbar-default.scrolled .navbar-nav li a {
+  line-height: 60px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
 #main {
   background-image: url('../img/main-bg-2.jpg');
   width: 100%;
@@ -195,6 +274,10 @@ span.page-info {
   height: auto;
 }
 
+.style-one {
+  border: 2px solid $highlight;
+  margin: 0;
+}
 .parallax {
 
 
@@ -294,6 +377,12 @@ table#sunday, table#saturday {
     padding: 5px;
     margin: 0px;
     display: none;
+    line-height: 100px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 

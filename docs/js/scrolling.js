@@ -35,6 +35,18 @@ $('a[href*="#"]')
     }
   });
 
+var headerTransparent = true;
+$(window).scroll(function(){
+  var headerShouldBeOpaque = $(window).scrollTop()>150;
+  if (headerShouldBeOpaque && headerTransparent) {
+    headerTransparent = false;
+    $('.navbar').addClass("scrolled");
+  } else if (!headerShouldBeOpaque && !headerTransparent) {
+    headerTransparent = true;
+    $('.navbar').removeClass("scrolled")
+  }
+})
+
 var isVisible = false;
 $(window).scroll(function(){
      var shouldBeVisible = $(window).scrollTop()>500;
