@@ -464,6 +464,13 @@ form#contact input.btn.btn-primary {
     margin-bottom: 10px; }
   h1.main-title {
     font-size: 3em !important; }
+  #SplashLogo {
+    width: 90%; }
+  .navbar-default.scrolled #Logo {
+    display: none; }
+  #fixedbtn-offer {
+    width: 200px;
+    height: 200px; }
   div.left {
     display: none; }
   #main {
