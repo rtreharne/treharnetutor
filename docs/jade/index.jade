@@ -35,7 +35,7 @@ html(lang='en')
             li
               a(href='#about') About
             li
-              a(href='#why') Testimonials
+              a(href='#testamonials') Testimonials
             li
               a(href='#contact') Contact
 
@@ -48,6 +48,20 @@ html(lang='en')
         .col.col-lg-offset-2.col-lg-8
           .text-left
             include main.jade
+    hr.style-one
+
+    .container#about.vertical-center.headline
+      .row
+        .col.col-lg-offset-3.col-lg-6
+          .text-center
+            include about.jade
+    hr.style-one
+
+    .container#testamonials.vertical-center.headline
+      .row
+        .col.col-lg-offset-1.col-lg-10
+          .text-center
+            include testamonials.jade
     hr.style-one
 
 

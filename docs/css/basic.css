@@ -229,7 +229,7 @@ span.page-info {
   height: auto; }
 
 .style-one {
-  border: 2px solid #085837;
+  border: 2px solid #aa0000;
   margin: 0; }
 
 .parallax {
@@ -440,6 +440,36 @@ form#contact textarea {
 form#contact input.btn.btn-primary {
   max-width: 150px; }
 
+#about.headline {
+  background-color: #003380;
+  margin: 0px;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+#about.headline p {
+  color: #fbfbfb; }
+
+font.strong {
+  font-weight: 900; }
+
+#ProfilePic {
+  max-width: 200px;
+  margin: 20px;
+  border-radius: 50%;
+  border: 4px solid #aa0000; }
+
+#testamonials p.quote {
+  font-style: italic;
+  font-size: 1.3em; }
+
+#testamonials p.name {
+  font-size: 0.9em; }
+
+.testamonial {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
 @media (max-width: 1200px) {
   body {
     font-size: 20px; }
@@ -473,8 +503,6 @@ form#contact input.btn.btn-primary {
     height: 200px; }
   div.left {
     display: none; }
-  #main {
-    margin-top: 30px; }
   .event-info h3 {
     margin-bottom: 0px;
     font-size: 1.3em; }

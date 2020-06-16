@@ -279,7 +279,7 @@ span.page-info {
 }
 
 .style-one {
-  border: 2px solid $highlight;
+  border: 2px solid $secondary-color;
   margin: 0;
 }
 .parallax {
@@ -530,6 +530,42 @@ form#contact input.btn.btn-primary {
   max-width: 150px;
 }
 
+#about.headline {
+  background-color: $primary-color;
+  margin: 0px;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#about.headline p {
+  color: $light-color
+}
+
+font.strong {
+  font-weight: 900;
+}
+
+#ProfilePic {
+  max-width: 200px;
+  margin: 20px;
+  border-radius: 50%;
+  border: 4px solid $secondary-color;
+}
+
+#testamonials p.quote {
+  font-style: italic;
+  font-size: 1.3em;
+}
+
+#testamonials p.name {
+  font-size: 0.9em;
+}
+
+.testamonial {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 @media (max-width: 1200px) {
   body {
@@ -582,9 +618,7 @@ form#contact input.btn.btn-primary {
   div.left{
     display: none;
   }
-  #main {
-    margin-top: 30px;
-  }
+
   .event-info h3 {
     margin-bottom: 0px;
     font-size: 1.3em;

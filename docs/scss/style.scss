@@ -25,9 +25,15 @@ h1.big-title {
 
 .headline h2 {
   font-family: 'Gothic A1', sans-serif;
-  font-weight: 70000;
+  font-weight: 700px;
   font-size: 2em;
   color: $primary-color;
+}
+
+.headline p {
+  font-family: 'Gothic A1', sans-serif;
+  color: $primary-color;
+  font-size: 1.2em;
 }
 
 #SplashLogo {
